@@ -17,7 +17,7 @@ let arr=JSON.parse(localStorage.getItem("basket"));
 arr.push(
     {
        Id:productId,
-       Price:this.previousElementSibling.innerText,
+       Price:this.previousElementSibling.firstElementChild.innerText,
        ImageURL:this.parentElement.previousElementSibling.getAttribute("src"),
        Name:this.parentElement.firstElementChild.innerText,
        Count:1
